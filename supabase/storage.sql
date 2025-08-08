@@ -1,0 +1,5 @@
+-- Create storage bucket 'carpets' in Supabase dashboard (Storage -> Create bucket -> 'carpets').
+-- Set it to public or use signed URLs. For simplicity, you can make it public for read and restrict write to authenticated.
+-- In Storage policies, add:
+-- SELECT: allow if true
+-- INSERT/UPDATE/DELETE: (auth.jwt() ->> 'role') in ('admin','staff')
